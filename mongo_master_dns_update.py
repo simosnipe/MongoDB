@@ -1,4 +1,10 @@
 #!/bin/python
+
+#############################################################################################
+# This scripts connects to local mongoDB replica set and checks if it's the master          #
+# If it is the master then it will update the selected url with current instance Public IP  #
+#                                                                                           #
+#############################################################################################
 import boto3
 from pymongo import MongoReplicaSetClient
 import socket
